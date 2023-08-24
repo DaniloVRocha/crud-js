@@ -3,7 +3,7 @@ const con = require('./conMySQL');
 function selectMysql(query){
     con.query(query ,(err, rows)=>{
         console.log(`O resultado da query ${query} é: \n`);
-        console.log(rows);
+        return rows;
     })
 }
 function insertMySql(query){

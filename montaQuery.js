@@ -25,7 +25,7 @@ function insert(table, fields, values){
     }
 
     for(value of values){
-        query = query + " ' " + value + " ' " + (value === values[values.length-1] ? ");" : " ,")
+        query = query + " '" + value + "' " + (value === values[values.length-1] ? ");" : " ,")
     }
     
     return query;
