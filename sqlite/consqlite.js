@@ -1,0 +1,8 @@
+const sqlite3 = require('sqlite3');
+
+const con = new sqlite3.Database('./database.sqlite', (error) => {
+  if (error) console.log(error);
+});
+
+
+module.exports = con;
