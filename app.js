@@ -1,5 +1,6 @@
 const montaQuery = require('./montaQuery');
-const con = require('./mysql/conMySQL');
+const con = require('./sqlite/consqlite');
+//const con = require('./mysql/conMySQL');
 const mysqlConnection = require('./mysql/mysql');
 const express = require('express');
 
@@ -7,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/cursos', (req, res) => {
-    con.query(montaQuery.select("curso") ,(err, rows) => {
+    con.all(montaQuery.select("curso") ,(err, rows) => {
         res.json(rows);
     })
 })
@@ -23,7 +24,7 @@ app.get('/cursos/:id', (req, res) => {
 
 app.post("/cursos", (req, res) => {
     let query = montaQuery.insert("curso", ["nome"], [req.body.nome])
-    con.query(query, () =>{
+    con.run(query, () =>{
         res.send("Curso inserido com sucesso.")
     })
 })

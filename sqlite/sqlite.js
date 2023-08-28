@@ -1,7 +1,7 @@
 const con = require('./consqlite');
 
 function selectSQLite(query){
-    con.all(query, (error, rows) => {
+    con.query(query, (error, rows) => {
         console.log(`O resultado da query SQLITE ${query} é: \n`);
         console.log(rows);
         con.close();

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1693094502267" clover="3.2.0">
+  <project timestamp="1693094502267" name="All files">
+    <metrics statements="14" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="7" coveredmethods="5" elements="27" coveredelements="20" complexity="0" loc="14" ncloc="14" packages="1" files="1" classes="1"/>
+    <file name="utils.js" path="C:\Users\danil\Documents\CRUD js\utils.js">
+      <metrics statements="14" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="7" coveredmethods="5"/>
+      <line num="2" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="5" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
